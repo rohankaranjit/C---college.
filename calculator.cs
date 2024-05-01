@@ -13,6 +13,12 @@ namespace Calculator
 
             Console.WriteLine(first + second);
             Console.ReadLine();
+            Console.WriteLine(first - second);
+            Console.ReadLine();
+            Console.WriteLine(first * second);
+            Console.ReadLine();
+            Console.WriteLine(first / second);
+            Console.ReadLine();
         }
     }
 }
