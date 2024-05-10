@@ -13,7 +13,6 @@ namespace Mathlib
 
 
 
-
             Console.Write("Choose a celebrity you admire.");
             string celebrity = Console.ReadLine();
 
