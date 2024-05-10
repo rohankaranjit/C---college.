@@ -10,7 +10,7 @@ namespace Mathlib
             Console.Write("Choose a plural noun.");
             string pluralnoun = Console.ReadLine();
 
-            Console.Write("Choose a celebrity you admire.");
+            Console.Write("Choose a celebrity you admire.")
             string celebrity = Console.ReadLine();
 
 
