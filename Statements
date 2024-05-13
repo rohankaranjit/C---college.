@@ -1,1 +1,15 @@
+using System;
 
+namespace statement
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool isMale = true;
+            bool isTall = true;
+
+            
+        }
+    }
+}
