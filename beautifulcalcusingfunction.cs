@@ -1,5 +1,4 @@
 using System;
-
 namespace beautifulcalculator
 {
     class Program
