@@ -41,4 +41,12 @@ namespace rohan_26819
             foreach (Student item in students)
             {
 
+                if (item.Address == searchAddress)
+                {
+                    filterStudent.Add(item);
+                }
+            }
+            return filterStudent;
+        }
+    }
 
