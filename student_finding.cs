@@ -31,5 +31,14 @@ namespace rohan_26819
             List<Student> filterStudent = FindStudentByAddress(st, "Kathmandu");
             foreach (var item in filterStudent)
             {
+                Console.WriteLine("Name:{0} Address:{1} Gender:{2}", item.Name, item.Address, item.Gender);
+            }
+            Console.ReadLine();
+        }
+        public static List<Student> FindStudentByAddress(List<Student> students, string searchAddress)
+        {
+            List<Student> filterStudent = new List<Student>();
+            foreach (Student item in students)
+            {
 
 
