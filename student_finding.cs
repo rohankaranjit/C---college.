@@ -22,4 +22,14 @@ namespace rohan_26819
             st.Add(new Student() { ID = 1, Name = "Hari Adhikari", Address = "Bhaktapur", Gender = "Male" });
             st.Add(new Student() { ID = 1, Name = "Mukesh Shah", Address = "Kathmandu", Gender = "Male" });
             Console.WriteLine("********************LIST OF STUDENTS********************");
+            foreach (var item in st)
+            {
+                Console.WriteLine("Name:{0} Address:{1} Gender:{1}", item.Name, item.Address, item.Gender);
+            }
+            Console.WriteLine();
+            Console.WriteLine("********************STUDENTS WITH ADDRESS KATHMANDU********************");
+            List<Student> filterStudent = FindStudentByAddress(st, "Kathmandu");
+            foreach (var item in filterStudent)
+            {
+
 
