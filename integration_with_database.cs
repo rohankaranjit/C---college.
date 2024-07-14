@@ -55,5 +55,16 @@ con.Open();
 cmd.ExecuteReader();
 con.Close();
 }
-
+public DataTable GetAllStudent()
+{
+string connStr = @"Data Source=(localdb)\MSSqlLocalDB; Database=SamriddhiData; Integrated Security=true";
+SqlConnection con = new SqlConnection(connStr);
+string sql = "select *from tblStudent";
+SqlCommand cmd = new SqlCommand(sql, con);
+SqlDataAdapter da = new SqlDataAdapter(cmd);
+DataTable dt = new DataTable();//can hold data in tabular format
+da.Fill(dt);
+return dt;
+}
+}
 }
