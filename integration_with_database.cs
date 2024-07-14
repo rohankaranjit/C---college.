@@ -40,4 +40,20 @@ Console.WriteLine("Total No of Student: " + dt.Rows.Count);
 Console.ReadLine();
 }
 }
+public class StudentInsert_Select
+{
+public void Insert(string name, string address, string gender)
+{
+string connStr = @"Data Source=(localdb)\MSSqlLocalDB; Database=SamriddhiData; Integrated Security=true";
+SqlConnection con = new SqlConnection(connStr);
+string sql = "insert into tblStudent values(@name,@address,@gender)";
+SqlCommand cmd = new SqlCommand(sql, con);
+cmd.Parameters.AddWithValue("@name", name);
+cmd.Parameters.AddWithValue("@address", address);
+cmd.Parameters.AddWithValue("@gender", gender);
+con.Open();
+cmd.ExecuteReader();
+con.Close();
+}
 
+}
